@@ -1,0 +1,20 @@
+name: ksn_nlp_task
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+    - torch==2.6.0
+    - transformers==4.54.1
+    - pandas==2.3.1
+    - scikit-learn==1.7.1
+    - label-studio-sdk==2.1.4
+    - requests>=2.34.0
+    - numpy>=2.2.0
+    - tqdm
+    - python-dotenv
+    - statsmodels

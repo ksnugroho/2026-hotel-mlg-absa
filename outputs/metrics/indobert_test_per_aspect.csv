@@ -1,0 +1,8 @@
+aspect,n_samples,accuracy,macro_precision,macro_recall,macro_f1,weighted_f1
+fasilitas,314,0.8535,0.7761,0.7905,0.7829,0.856
+harga,78,0.9359,0.6009,0.6312,0.6154,0.9241
+kebersihan,214,0.9766,0.642,0.655,0.6484,0.9698
+kenyamanan_kamar,129,0.9612,0.5727,0.5333,0.5501,0.9486
+lokasi,193,0.9689,0.7706,0.6631,0.7089,0.9668
+overall_sentiment,537,0.8976,0.836,0.8516,0.8426,0.9003
+pelayanan,327,0.9572,0.7939,0.708,0.726,0.9498

@@ -1,0 +1,28 @@
+aspect,label,count,percentage
+Cleanliness,Not Mentioned,2167,60.63
+Cleanliness,Positive,1160,32.46
+Cleanliness,Negative,211,5.9
+Cleanliness,Neutral,36,1.01
+Service,Positive,1764,49.36
+Service,Not Mentioned,1365,38.19
+Service,Negative,361,10.1
+Service,Neutral,84,2.35
+Facilities,Not Mentioned,1525,42.67
+Facilities,Positive,1281,35.84
+Facilities,Neutral,401,11.22
+Facilities,Negative,367,10.27
+Location,Not Mentioned,2352,65.81
+Location,Positive,1156,32.34
+Location,Negative,35,0.98
+Location,Neutral,31,0.87
+Price,Not Mentioned,3015,84.36
+Price,Positive,431,12.06
+Price,Negative,87,2.43
+Price,Neutral,41,1.15
+Room Comfort,Not Mentioned,2754,77.06
+Room Comfort,Positive,772,21.6
+Room Comfort,Negative,37,1.04
+Room Comfort,Neutral,11,0.31
+Overall Sentiment,Positive,2423,67.8
+Overall Sentiment,Neutral,647,18.1
+Overall Sentiment,Negative,504,14.1

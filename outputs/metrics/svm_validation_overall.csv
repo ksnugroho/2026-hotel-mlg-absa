@@ -1,0 +1,2 @@
+model,split,timestamp,n_samples,accuracy,macro_precision,macro_recall,macro_f1,weighted_f1
+svm,validation,2026-11-11 01:38:58,1796,0.8831,0.7633,0.6887,0.7196,0.8741

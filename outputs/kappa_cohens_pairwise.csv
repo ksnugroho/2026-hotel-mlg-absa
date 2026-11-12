@@ -1,0 +1,22 @@
+aspect,annotator_1,annotator_2,n_tasks,cohens_kappa,interpretation
+Cleanliness,4,5,3574,0.8565,Almost Perfect
+Cleanliness,4,6,3574,0.841,Almost Perfect
+Cleanliness,5,6,3574,0.8581,Almost Perfect
+Service,4,5,3574,0.8021,Almost Perfect
+Service,4,6,3574,0.8324,Almost Perfect
+Service,5,6,3574,0.7737,Substantial
+Facilities,4,5,3574,0.6652,Substantial
+Facilities,4,6,3574,0.6281,Substantial
+Facilities,5,6,3574,0.6202,Substantial
+Location,4,5,3574,0.8417,Almost Perfect
+Location,4,6,3574,0.8355,Almost Perfect
+Location,5,6,3574,0.8325,Almost Perfect
+Price,4,5,3574,0.6632,Substantial
+Price,4,6,3574,0.6941,Substantial
+Price,5,6,3574,0.6954,Substantial
+Room Comfort,4,5,3574,0.5372,Moderate
+Room Comfort,4,6,3574,0.3227,Fair
+Room Comfort,5,6,3574,0.5284,Moderate
+Overall Sentiment,4,5,3574,0.8074,Almost Perfect
+Overall Sentiment,4,6,3574,0.7591,Substantial
+Overall Sentiment,5,6,3574,0.7555,Substantial

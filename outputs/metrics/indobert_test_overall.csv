@@ -1,0 +1,2 @@
+model,split,timestamp,n_samples,accuracy,macro_precision,macro_recall,macro_f1,weighted_f1
+indobert,test,2026-11-11 03:04:09,1792,0.9241,0.8191,0.8219,0.8205,0.9242

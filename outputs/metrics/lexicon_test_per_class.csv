@@ -1,0 +1,4 @@
+label,precision,recall,f1,support
+negative,0.75,0.0238,0.0462,252
+neutral,0.0,0.0,0.0,159
+positive,0.773,0.9964,0.8706,1381

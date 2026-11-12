@@ -1,0 +1,39 @@
+experiment:
+  name: absa_hotel_malang
+  seed: 42
+  split:
+    train: 0.70
+    validation: 0.15
+    test: 0.15
+    group_column: review_id
+
+task:
+  text_column: review_text
+  aspect_column: aspect
+  label_column: sentiment
+  labels:
+    - negative
+    - neutral
+    - positive
+  exclude_labels:
+    - Tidak Disebutkan
+  primary_metric: macro_f1
+  aspects:
+    - kebersihan
+    - pelayanan
+    - fasilitas
+    - lokasi
+    - harga
+    - kenyamanan_kamar
+    - overall_sentiment
+
+paths:
+  raw_dataset: data/raw/dataset.csv
+  train: data/processed/train.csv
+  validation: data/processed/validation.csv
+  test: data/processed/test.csv
+  manifest: data/manifests/split_manifest.json
+  lexicon_base: lexicons/inset_combined.csv
+  lexicon_domain: lexicons/hotel_domain_lexicon.csv
+  aspect_terms: lexicons/aspect_terms.csv
+  outputs: outputs/

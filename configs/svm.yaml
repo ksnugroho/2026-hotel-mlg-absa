@@ -1,0 +1,21 @@
+vectorizer:
+  ngram_range:
+    - [1, 1]
+    - [1, 2]
+  min_df: [1, 2]
+  max_df: [0.9, 1.0]
+  sublinear_tf: [true, false]
+  max_features: null
+
+classifier:
+  kernel:
+    - linear
+  C:
+    - 0.1
+    - 1
+    - 10
+  class_weight:
+    - null
+    - balanced
+
+selection_metric: macro_f1

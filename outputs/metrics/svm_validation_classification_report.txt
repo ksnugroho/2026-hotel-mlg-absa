@@ -1,0 +1,14 @@
+Model  : svm
+Split  : validation
+Time   : 2026-11-11 01:38:58
+Samples: 1796
+
+              precision    recall  f1-score   support
+
+    negative       0.84      0.71      0.77       241
+     neutral       0.53      0.38      0.44       176
+    positive       0.92      0.98      0.95      1379
+
+    accuracy                           0.88      1796
+   macro avg       0.76      0.69      0.72      1796
+weighted avg       0.87      0.88      0.87      1796

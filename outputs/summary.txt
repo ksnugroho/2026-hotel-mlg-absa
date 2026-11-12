@@ -1,0 +1,62 @@
+=== DATASET SUMMARY ===
+Total reviews       : 3574
+Unique hotels       : 80
+Unique districts    : 5
+Total annotations   : 10728
+Avg annotators/task : 3.00
+
+=== REVIEW LENGTH (characters) ===
+Min    : 47
+Max    : 2694
+Mean   : 259.9
+Median : 158.0
+
+=== LABEL DISTRIBUTION PER ASPECT ===
+
+Cleanliness:
+  Not Mentioned     :  2167 (60.6%)
+  Positive          :  1160 (32.5%)
+  Negative          :   211 (5.9%)
+  Neutral           :    36 (1.0%)
+
+Service:
+  Positive          :  1764 (49.4%)
+  Not Mentioned     :  1365 (38.2%)
+  Negative          :   361 (10.1%)
+  Neutral           :    84 (2.4%)
+
+Facilities:
+  Not Mentioned     :  1525 (42.7%)
+  Positive          :  1281 (35.8%)
+  Neutral           :   401 (11.2%)
+  Negative          :   367 (10.3%)
+
+Location:
+  Not Mentioned     :  2352 (65.8%)
+  Positive          :  1156 (32.3%)
+  Negative          :    35 (1.0%)
+  Neutral           :    31 (0.9%)
+
+Price:
+  Not Mentioned     :  3015 (84.4%)
+  Positive          :   431 (12.1%)
+  Negative          :    87 (2.4%)
+  Neutral           :    41 (1.1%)
+
+Room Comfort:
+  Not Mentioned     :  2754 (77.1%)
+  Positive          :   772 (21.6%)
+  Negative          :    37 (1.0%)
+  Neutral           :    11 (0.3%)
+
+Overall Sentiment:
+  Positive          :  2423 (67.8%)
+  Neutral           :   647 (18.1%)
+  Negative          :   504 (14.1%)
+
+=== REVIEWS PER DISTRICT ===
+  Klojen              : 1729
+  Blimbing            : 747
+  Lowokwaru           : 666
+  Sukun               : 346
+  Kedungkandang       : 86

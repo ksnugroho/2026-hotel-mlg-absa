@@ -1,0 +1,11 @@
+{
+  "model": "lexicon",
+  "split": "validation",
+  "timestamp": "2026-11-11 02:59:27",
+  "n_samples": 1796,
+  "accuracy": 0.7689,
+  "macro_precision": 0.5981,
+  "macro_recall": 0.3423,
+  "macro_f1": 0.3095,
+  "weighted_f1": 0.6749
+}

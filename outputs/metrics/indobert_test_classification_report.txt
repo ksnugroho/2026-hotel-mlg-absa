@@ -1,0 +1,14 @@
+Model  : indobert
+Split  : test
+Time   : 2026-11-11 03:04:09
+Samples: 1792
+
+              precision    recall  f1-score   support
+
+    negative       0.88      0.89      0.88       252
+     neutral       0.61      0.61      0.61       159
+    positive       0.97      0.97      0.97      1381
+
+    accuracy                           0.92      1792
+   macro avg       0.82      0.82      0.82      1792
+weighted avg       0.92      0.92      0.92      1792

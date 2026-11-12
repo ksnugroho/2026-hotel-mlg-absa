@@ -1,0 +1,42 @@
+lexicon:
+  base: lexicons/inset_combined.csv
+  domain_extension: lexicons/hotel_domain_lexicon.csv
+  aspect_terms: lexicons/aspect_terms.csv
+  no_match_policy: neutral   # neutral | no_prediction
+
+rules:
+  negation_window: 3          # token ke kiri kata sentimen
+  negation_words:
+    - tidak
+    - bukan
+    - kurang
+    - belum
+    - tanpa
+    - tak
+    - jangan
+  intensifier_words:
+    sangat: 1.5
+    amat: 1.5
+    banget: 1.5
+    sekali: 1.3
+    terlalu: 1.3
+    sungguh: 1.4
+    benar-benar: 1.4
+  diminisher_words:
+    agak: 0.7
+    cukup: 0.8
+    lumayan: 0.75
+    sedikit: 0.6
+  contrast_words:
+    - tapi
+    - tetapi
+    - namun
+    - meski
+    - meskipun
+    - walaupun
+    - padahal
+
+thresholds:
+  positive_min: 0.0001
+  negative_max: -0.0001
+  # skor antara keduanya → neutral

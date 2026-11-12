@@ -1,0 +1,4 @@
+model,accuracy,macro_precision,macro_recall,macro_f1,weighted_f1
+lexicon,0.7712,0.5077,0.3401,0.3056,0.6774
+svm,0.889,0.7726,0.703,0.7315,0.8809
+indobert,0.9241,0.8191,0.8219,0.8205,0.9242

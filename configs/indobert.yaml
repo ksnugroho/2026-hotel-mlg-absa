@@ -1,0 +1,32 @@
+checkpoint: indobenchmark/indobert-base-p2
+num_labels: 3
+
+tokenizer:
+  max_length:
+    - 128
+    - 256
+  padding: true
+  truncation: true
+
+training:
+  learning_rate:
+    - 2.0e-5
+    - 3.0e-5
+    - 5.0e-5
+  batch_size:
+    - 16
+  epochs:
+    - 3
+    - 4
+    - 5
+  weight_decay: 0.01
+  warmup_ratio:
+    - 0.0
+    - 0.1
+  optimizer: adamw
+  early_stopping_patience: 2
+  selection_metric: macro_f1
+
+hardware:
+  fp16: true
+  dataloader_num_workers: 2

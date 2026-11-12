@@ -1,0 +1,11 @@
+{
+  "model": "svm",
+  "split": "test",
+  "timestamp": "2026-11-11 03:04:09",
+  "n_samples": 1792,
+  "accuracy": 0.889,
+  "macro_precision": 0.7726,
+  "macro_recall": 0.703,
+  "macro_f1": 0.7315,
+  "weighted_f1": 0.8809
+}

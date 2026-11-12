@@ -1,0 +1,14 @@
+Model  : lexicon
+Split  : validation
+Time   : 2026-11-11 02:59:27
+Samples: 1796
+
+              precision    recall  f1-score   support
+
+    negative       0.86      0.02      0.05       241
+     neutral       0.17      0.01      0.01       176
+    positive       0.77      1.00      0.87      1379
+
+    accuracy                           0.77      1796
+   macro avg       0.60      0.34      0.31      1796
+weighted avg       0.72      0.77      0.67      1796

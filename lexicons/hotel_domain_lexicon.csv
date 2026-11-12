@@ -1,0 +1,63 @@
+token,polarity_score,source,notes
+bersih,1,domain,kamar/fasilitas bersih
+kotor,-1,domain,kamar/fasilitas kotor
+nyaman,1,domain,kenyamanan kamar/hotel
+tidak nyaman,-1,domain,frasa multi-kata
+sempit,-0.5,domain,kamar sempit
+luas,0.5,domain,kamar luas
+wangi,0.7,domain,bersih dan wangi
+bau,-1,domain,tidak bersih
+harum,0.7,domain,wangi/bersih
+ramah,1,domain,pelayanan ramah
+sopan,0.8,domain,pelayanan sopan
+kasar,-1,domain,pelayanan kasar
+lambat,-0.7,domain,pelayanan lambat
+cepat,0.7,domain,pelayanan cepat
+responsif,0.8,domain,pelayanan responsif
+profesional,0.8,domain,pelayanan profesional
+helpful,0.8,domain,pelayanan membantu
+membantu,0.8,domain,pelayanan membantu
+acuh,-0.8,domain,pelayanan tidak peduli
+murah,1,domain,harga terjangkau
+terjangkau,1,domain,harga terjangkau
+mahal,-0.5,domain,harga mahal
+worth it,1,domain,harga sesuai
+worthit,1,domain,harga sesuai
+sebanding,0.7,domain,harga sesuai nilai
+strategis,0.8,domain,lokasi strategis
+central,0.7,domain,lokasi pusat
+dekat,0.5,domain,kontekstual - dekat destinasi
+jauh,-0.5,domain,kontekstual - jauh dari pusat
+terpencil,-0.6,domain,lokasi terpencil
+lengkap,0.8,domain,fasilitas lengkap
+tidak lengkap,-0.8,domain,fasilitas kurang
+memadai,0.6,domain,fasilitas memadai
+tidak memadai,-0.6,domain,fasilitas tidak memadai
+rusak,-1,domain,fasilitas rusak
+baik,0.8,domain,generik positif
+buruk,-0.8,domain,generik negatif
+bagus,0.9,domain,generik positif
+jelek,-0.9,domain,generik negatif
+memuaskan,1,domain,kepuasan
+mengecewakan,-1,domain,kekecewaan
+rekomen,0.9,domain,rekomendasi positif
+rekomendasi,0.6,domain,kontekstual
+sarankan,0.5,domain,kontekstual
+kecewa,-1,domain,kekecewaan
+puas,1,domain,kepuasan
+mewah,0.7,domain,bintang tinggi
+bintang,0,domain,netral - perlu konteks
+wifi,0,domain,fasilitas - netral
+ac,0,domain,fasilitas - perlu konteks
+parkir,0,domain,fasilitas - perlu konteks
+kolam renang,0,domain,fasilitas - perlu konteks
+sarapan,0,domain,kontekstual
+breakfast,0,domain,kontekstual
+check-in,0,domain,proses - netral
+check-out,0,domain,proses - netral
+resepsionis,0,domain,pelayanan - perlu konteks
+lobby,0,domain,area - perlu konteks
+sprei,0,domain,fasilitas kamar - perlu konteks
+bantal,0,domain,fasilitas kamar - perlu konteks
+kamar mandi,0,domain,fasilitas - perlu konteks
+air panas,0,domain,fasilitas - perlu konteks

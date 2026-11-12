@@ -1,0 +1,27 @@
+# environment & secrets
+.env
+
+# model weights (too large for GitHub — use HuggingFace Hub or cloud storage)
+outputs/models/indobert_best/model.safetensors
+outputs/models/svm_pipeline.pkl
+
+# python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# jupyter
+.ipynb_checkpoints/
+
+# virtual env
+.venv/
+venv/
+env/
+
+# editor
+.vscode/
+.idea/
+*.swp

@@ -1,0 +1,8 @@
+aspect,n_tasks,fleiss_kappa,interpretation
+Cleanliness,3574,0.8516,Almost Perfect
+Service,3574,0.8024,Almost Perfect
+Facilities,3574,0.6366,Substantial
+Location,3574,0.8365,Almost Perfect
+Price,3574,0.6836,Substantial
+Room Comfort,3574,0.4447,Moderate
+Overall Sentiment,3574,0.7742,Substantial

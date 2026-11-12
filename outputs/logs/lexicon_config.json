@@ -1,0 +1,8 @@
+{
+  "timestamp": "2026-11-11 02:59:27",
+  "lexicon_base": "InSet (Indonesian Sentiment Lexicon)",
+  "lexicon_domain": "lexicons/hotel_domain_lexicon.csv",
+  "aspect_terms": "lexicons/aspect_terms.csv",
+  "negation_window": 3,
+  "no_match_policy": "neutral"
+}

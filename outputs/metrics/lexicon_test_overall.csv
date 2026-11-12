@@ -1,0 +1,2 @@
+model,split,timestamp,n_samples,accuracy,macro_precision,macro_recall,macro_f1,weighted_f1
+lexicon,test,2026-11-11 03:04:09,1792,0.7712,0.5077,0.3401,0.3056,0.6774
