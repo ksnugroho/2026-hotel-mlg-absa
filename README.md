@@ -17,16 +17,16 @@ A comparative study of three approaches for Aspect-Based Sentiment Analysis (ABS
 ```
 2026-hotel-mlg-absa/
 ├── src/
-│   ├── export_dataset_label_studio.py   # export & majority vote dari Label Studio
+│   ├── export_dataset_label_studio.py   # export & majority vote from Label Studio
 │   ├── eda.py                           # exploratory data analysis
 │   ├── kappa_score.py                   # inter-annotator agreement
-│   ├── 01_prepare_data.py               # build pairs, split 70:15:15, validasi
-│   ├── 02_run_lexicon.py                # inferensi lexicon pada val + test
-│   ├── 03_train_svm.py                  # grid search TF-IDF + SVM
-│   ├── 04_train_indobert.py             # fine-tuning IndoBERT-base-p2
-│   ├── 05_evaluate_test.py              # evaluasi 3 model + McNemar + Holm
-│   ├── 06_infer_full_dataset.py         # inferensi seluruh dataset
-│   ├── data/                            # modul load & split data
+│   ├── 01_prepare_data.py               # build pairs, split 70:15:15, validate
+│   ├── 02_run_lexicon.py                # lexicon inference on val + test
+│   ├── 03_train_svm.py                  # TF-IDF + SVM grid search
+│   ├── 04_train_indobert.py             # IndoBERT-base-p2 fine-tuning
+│   ├── 05_evaluate_test.py              # evaluate 3 models + McNemar + Holm
+│   ├── 06_infer_full_dataset.py         # full dataset inference
+│   ├── data/                            # data loading & splitting modules
 │   ├── models/                          # lexicon_model, svm_model, indobert_model
 │   ├── evaluation/                      # metrics, confusion_matrix, significance_test
 │   ├── preprocessing/                   # text_preprocessing per model
@@ -77,10 +77,10 @@ Fine-tuned [`indobenchmark/indobert-base-p2`](https://huggingface.co/indobenchma
 - **Reviews**: 3,574 unique reviews
 - **Annotators**: 3 annotators
 - **Aspects**: kebersihan, pelayanan, fasilitas, lokasi, harga, kenyamanan_kamar, overall_sentiment
-- **Labels**: Positif, Negatif, Netral, Tidak Disebutkan
+- **Labels**: Positive, Negative, Neutral, Not Mentioned
 - **Resolution**: majority vote per aspect across 3 annotators
-- **Training labels**: positive, negative, neutral (Tidak Disebutkan excluded)
-- **Review-aspect pairs**: ~11,840 (after excluding Tidak Disebutkan)
+- **Training labels**: positive, negative, neutral (Not Mentioned excluded)
+- **Review-aspect pairs**: ~11,840 (after excluding Not Mentioned)
 - **Split**: 70:15:15 by `review_id` (GroupShuffleSplit, seed=42) — no data leakage across aspects of the same review
 
 **Inter-annotator agreement (Fleiss' Kappa):**
@@ -138,14 +138,14 @@ cd 2026-hotel-mlg-absa
 ```
 
 ```bash
-python src/export_dataset_label_studio.py   # export dari Label Studio
-python src/eda.py                           # EDA
+python src/export_dataset_label_studio.py   # export from Label Studio
+python src/eda.py                           # exploratory data analysis
 python src/kappa_score.py                   # inter-annotator agreement
 python src/01_prepare_data.py               # split 70:15:15
 python src/02_run_lexicon.py                # lexicon inference
 python src/03_train_svm.py                  # SVM grid search
-python src/04_train_indobert.py             # IndoBERT fine-tuning (~1.5 jam, RTX 8000)
-python src/05_evaluate_test.py              # evaluasi + McNemar + Holm
+python src/04_train_indobert.py             # IndoBERT fine-tuning (~1.5 hrs, RTX 8000)
+python src/05_evaluate_test.py              # evaluation + McNemar + Holm
 python src/06_infer_full_dataset.py         # full dataset inference
 ```
 
@@ -163,7 +163,7 @@ python src/06_infer_full_dataset.py         # full dataset inference
 
 ![Overall Comparison](outputs/figures/fig1_overall_comparison.png)
 
-> **Figure 1.** IndoBERT-base-p2 unggul di semua metrik. Kesenjangan terbesar terlihat pada Macro-F1: Lexicon hanya 0.3056 karena lexicon berbasis kata tidak mampu menangkap konteks aspek, sedangkan SVM (0.7315) memanfaatkan pola n-gram. IndoBERT (0.8205) menutup sebagian besar gap tersisa berkat representasi kontekstual. Weighted-F1 yang tinggi pada Lexicon (0.6774) relatif terhadap Macro-F1-nya menunjukkan bias kuat ke kelas mayoritas (*positive*).
+> **Figure 1.** IndoBERT-base-p2 outperforms all models across every metric. The largest gap is in Macro-F1: Lexicon scores only 0.3056 as word-level lexicons cannot capture aspect context, while SVM (0.7315) leverages n-gram patterns. IndoBERT (0.8205) closes most of the remaining gap through contextual representations. The relatively high Weighted-F1 of Lexicon (0.6774) compared to its Macro-F1 reflects a strong bias toward the majority class (*positive*).
 
 ---
 
@@ -182,11 +182,11 @@ python src/06_infer_full_dataset.py         # full dataset inference
 
 ![Per-Aspect Macro-F1](outputs/figures/fig2_per_aspect_macro_f1.png)
 
-> **Figure 2.** IndoBERT konsisten unggul di seluruh aspek. Peningkatan terbesar dari SVM ke IndoBERT terjadi pada `lokasi` (+0.306) — aspek ini membutuhkan pemahaman konteks yang dalam karena ulasan lokasi sering bersifat implisit (misalnya, "dekat dari pusat kota" tanpa kata sentimental eksplisit). `kenyamanan_kamar` adalah aspek tersulit bagi semua model (Fleiss' κ = 0.445, terendah), mencerminkan ambiguitas anotasi yang lebih tinggi.
+> **Figure 2.** IndoBERT consistently outperforms across all aspects. The largest gain from SVM to IndoBERT is on `lokasi` (+0.306) — this aspect requires deep contextual understanding as location reviews are often implicit (e.g., "close to the city center" with no explicit sentiment word). `kenyamanan_kamar` is the most difficult aspect for all models (Fleiss' κ = 0.445, lowest), reflecting higher annotation ambiguity.
 
 ![Radar Per-Aspect](outputs/figures/fig3_radar_per_aspect.png)
 
-> **Figure 3.** Radar chart memperjelas distribusi kekuatan tiap model. Lexicon membentuk area yang sangat kecil dan merata — tidak ada aspek yang dikuasainya. SVM membentuk poligon yang lebih luas tetapi cekung di `lokasi` dan `harga`. IndoBERT membentuk area paling luas dan paling simetris, dengan titik lemah relatif di `kenyamanan_kamar` yang konsisten dengan ambiguitas data.
+> **Figure 3.** The radar chart clarifies the strength distribution of each model. Lexicon forms a very small, uniform area — it does not dominate any aspect. SVM forms a larger polygon but is concave at `lokasi` and `harga`. IndoBERT spans the widest and most symmetric area, with its relative weakness at `kenyamanan_kamar` consistent with the higher data ambiguity for that aspect.
 
 ---
 
@@ -194,7 +194,7 @@ python src/06_infer_full_dataset.py         # full dataset inference
 
 ![Per-Class F1](outputs/figures/fig6_per_class_f1.png)
 
-> **Figure 4.** Semua model kesulitan pada kelas *neutral* — kelas terkecil dan paling ambigu (hanya 159 sampel di test set). Lexicon hampir tidak mengenali *negative* (F1 rendah) karena kamus sentimen negatifnya tidak mencakup banyak ekspresi kritik yang halus dalam ulasan hotel berbahasa Indonesia. IndoBERT meningkatkan F1 *neutral* dari 0.000 (Lexicon) ke 0.610, namun masih jauh di bawah *positive* (0.968), mengindikasikan ruang perbaikan dengan teknik *class balancing*.
+> **Figure 4.** All models struggle with the *neutral* class — the smallest and most ambiguous class (only 159 samples in the test set). Lexicon barely recognizes *negative* reviews (low F1) as its negative sentiment lexicon does not cover many subtle critical expressions in Indonesian hotel reviews. IndoBERT improves *neutral* F1 from 0.000 (Lexicon) to 0.610, but it still falls well below *positive* (0.968), indicating room for improvement with class-balancing techniques.
 
 ---
 
@@ -202,11 +202,11 @@ python src/06_infer_full_dataset.py         # full dataset inference
 
 ![Learning Curve](outputs/figures/fig4_indobert_learning_curve.png)
 
-> **Figure 5.** Kurva belajar konfigurasi terbaik (`lr=2e-5`, `maxlen=256`, `warmup=0.1`). Val Macro-F1 meningkat monoton sepanjang 5 epoch tanpa tanda overfitting, sedangkan train loss menurun konsisten (0.353 → 0.079). Hal ini menunjukkan bahwa dengan dataset berukuran ~8,300 pasangan train, 5 epoch masih dalam regime underfitting ringan — penambahan epoch atau augmentasi data berpotensi meningkatkan performa lebih lanjut.
+> **Figure 5.** Learning curve for the best configuration (`lr=2e-5`, `maxlen=256`, `warmup=0.1`). Val Macro-F1 increases monotonically across 5 epochs with no sign of overfitting, while train loss decreases consistently (0.353 → 0.079). With ~8,300 training pairs, 5 epochs still appears to be in a mild underfitting regime — additional epochs or data augmentation may yield further gains.
 
 ![Hyperparameter Heatmap](outputs/figures/fig5_hparam_heatmap.png)
 
-> **Figure 6.** Heatmap grid search menunjukkan `max_length=256` secara konsisten menghasilkan Macro-F1 lebih tinggi dari `max_length=128` pada semua kombinasi LR dan epoch. Learning rate `2e-5` adalah yang paling stabil; `5e-5` cenderung menurun pada `max_length=128`. Warmup ratio `0.1` memberikan keuntungan kecil namun konsisten dibandingkan tanpa warmup, terutama pada epoch lebih sedikit.
+> **Figure 6.** The grid search heatmap shows `max_length=256` consistently yields higher Macro-F1 than `max_length=128` across all LR and epoch combinations. Learning rate `2e-5` is the most stable; `5e-5` tends to degrade at `max_length=128`. Warmup ratio `0.1` provides a small but consistent advantage over no warmup, especially with fewer epochs.
 
 ---
 
@@ -214,7 +214,7 @@ python src/06_infer_full_dataset.py         # full dataset inference
 
 ![McNemar Test](outputs/figures/fig7_significance_mcnemar.png)
 
-> **Figure 7.** Uji McNemar menunjukkan bahwa seluruh perbedaan pasangan model secara statistik signifikan (p ≈ 0.000, Holm-corrected). Pasangan *Lexicon vs IndoBERT* memiliki jumlah pasangan diskordant terbesar (366), memperkuat bahwa perbedaan prediksi kedua model bukan karena kebetulan. Pasangan *SVM vs IndoBERT* memiliki 153 pasangan diskordant — lebih kecil namun tetap signifikan, menunjukkan IndoBERT memperbaiki kasus-kasus yang gagal diprediksi SVM secara konsisten.
+> **Figure 7.** McNemar's test confirms that all pairwise model differences are statistically significant (p ≈ 0.000, Holm-corrected). The *Lexicon vs IndoBERT* pair has the largest number of discordant pairs (366), reinforcing that the prediction difference between these two models is not due to chance. The *SVM vs IndoBERT* pair has 153 discordant pairs — fewer, but still significant — indicating IndoBERT consistently corrects cases that SVM misclassifies.
 
 ---
 
