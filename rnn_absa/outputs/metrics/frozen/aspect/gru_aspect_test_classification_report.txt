@@ -1,0 +1,14 @@
+Model     : gru
+Experiment: aspect
+Split     : test
+Timestamp : 2026-11-13 01:42:40
+
+              precision    recall  f1-score   support
+
+    negative       0.81      0.55      0.66       172
+     neutral       0.18      0.42      0.25        77
+    positive       0.93      0.88      0.91      1006
+
+    accuracy                           0.81      1255
+   macro avg       0.64      0.62      0.60      1255
+weighted avg       0.87      0.81      0.83      1255

@@ -5,6 +5,13 @@
 outputs/models/indobert_best/model.safetensors
 outputs/models/svm_pipeline.pkl
 
+# fastText embedding (too large for GitHub — see rnn_absa/embeddings/README.md)
+rnn_absa/embeddings/*.bin
+rnn_absa/embeddings/*.gz
+
+# RNN model checkpoints
+rnn_absa/outputs/models/**/*.pt
+
 # python
 __pycache__/
 *.py[cod]

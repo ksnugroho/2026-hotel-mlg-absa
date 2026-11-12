@@ -1,0 +1,2 @@
+model,experiment,split,timestamp,n_samples,accuracy,macro_precision,macro_recall,macro_f1,weighted_f1
+birnn_seed456,overall,validation,2026-11-13 01:43:44,536,0.8283582089552238,0.7210739390356063,0.7510918817926604,0.7346985253964124,0.8330280923702503

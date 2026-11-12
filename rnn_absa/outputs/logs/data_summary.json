@@ -1,0 +1,80 @@
+{
+  "train": {
+    "aspect_exp": {
+      "total": 5751,
+      "per_aspect": {
+        "fasilitas": 1400,
+        "harga": 403,
+        "kebersihan": 969,
+        "kenyamanan_kamar": 564,
+        "lokasi": 854,
+        "pelayanan": 1561
+      },
+      "per_label": {
+        "negative": 762,
+        "neutral": 438,
+        "positive": 4551
+      }
+    },
+    "overall_exp": {
+      "total": 2501,
+      "per_label": {
+        "negative": 347,
+        "neutral": 478,
+        "positive": 1676
+      }
+    }
+  },
+  "validation": {
+    "aspect_exp": {
+      "total": 1260,
+      "per_aspect": {
+        "fasilitas": 335,
+        "harga": 78,
+        "kebersihan": 224,
+        "kenyamanan_kamar": 127,
+        "lokasi": 175,
+        "pelayanan": 321
+      },
+      "per_label": {
+        "negative": 164,
+        "neutral": 89,
+        "positive": 1007
+      }
+    },
+    "overall_exp": {
+      "total": 536,
+      "per_label": {
+        "negative": 77,
+        "neutral": 87,
+        "positive": 372
+      }
+    }
+  },
+  "test": {
+    "aspect_exp": {
+      "total": 1255,
+      "per_aspect": {
+        "fasilitas": 314,
+        "harga": 78,
+        "kebersihan": 214,
+        "kenyamanan_kamar": 129,
+        "lokasi": 193,
+        "pelayanan": 327
+      },
+      "per_label": {
+        "negative": 172,
+        "neutral": 77,
+        "positive": 1006
+      }
+    },
+    "overall_exp": {
+      "total": 537,
+      "per_label": {
+        "negative": 80,
+        "neutral": 82,
+        "positive": 375
+      }
+    }
+  }
+}

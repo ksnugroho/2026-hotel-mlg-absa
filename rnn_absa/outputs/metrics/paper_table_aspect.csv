@@ -1,0 +1,13 @@
+architecture,embedding,test_mean_accuracy,test_std_accuracy,test_mean_macro_f1,test_std_macro_f1
+RNN,Frozen,0.7304,0.0104,0.3846,0.0229
+RNN,Unfrozen,0.7238,0.0606,0.3653,0.0187
+LSTM,Frozen,0.7934,0.015,0.5841,0.0201
+LSTM,Unfrozen,0.8202,0.0192,0.5757,0.054
+GRU,Frozen,0.792,0.02,0.5178,0.1146
+GRU,Unfrozen,0.7942,0.0114,0.6274,0.0119
+BiRNN,Frozen,0.8268,0.0059,0.6381,0.001
+BiRNN,Unfrozen,0.8558,0.0085,0.6745,0.0121
+BiLSTM,Frozen,0.838,0.0063,0.6549,0.0088
+BiLSTM,Unfrozen,0.8481,0.0082,0.6812,0.0109
+BiGRU,Frozen,0.8367,0.003,0.6581,0.0054
+BiGRU,Unfrozen,0.8526,0.0102,0.6791,0.019

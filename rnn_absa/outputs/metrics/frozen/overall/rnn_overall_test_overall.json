@@ -1,0 +1,12 @@
+{
+  "model": "rnn",
+  "experiment": "overall",
+  "split": "test",
+  "timestamp": "2026-11-13 01:42:58",
+  "n_samples": 537,
+  "accuracy": 0.6685288640595903,
+  "macro_precision": 0.3669664525339044,
+  "macro_recall": 0.36080758807588076,
+  "macro_f1": 0.34659183041549735,
+  "weighted_f1": 0.6069125878698807
+}

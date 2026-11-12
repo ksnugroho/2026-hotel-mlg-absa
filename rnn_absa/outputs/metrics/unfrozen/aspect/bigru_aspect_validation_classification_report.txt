@@ -1,0 +1,14 @@
+Model     : bigru
+Experiment: aspect
+Split     : validation
+Timestamp : 2026-11-13 01:43:32
+
+              precision    recall  f1-score   support
+
+    negative       0.71      0.79      0.75       164
+     neutral       0.33      0.42      0.37        89
+    positive       0.96      0.92      0.94      1007
+
+    accuracy                           0.86      1260
+   macro avg       0.66      0.71      0.68      1260
+weighted avg       0.88      0.86      0.87      1260

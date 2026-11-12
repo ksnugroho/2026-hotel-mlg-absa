@@ -1,0 +1,4 @@
+arch,seed,val_macro_f1,best_epoch,training_time_s
+birnn,42,0.7308,8,34.9
+birnn,123,0.7272,19,55.8
+birnn,456,0.7347,9,36.6

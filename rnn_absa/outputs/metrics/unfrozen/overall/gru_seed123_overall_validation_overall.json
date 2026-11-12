@@ -1,0 +1,12 @@
+{
+  "model": "gru_seed123",
+  "experiment": "overall",
+  "split": "validation",
+  "timestamp": "2026-11-13 01:43:42",
+  "n_samples": 536,
+  "accuracy": 0.7406716417910447,
+  "macro_precision": 0.5802200594121326,
+  "macro_recall": 0.5600181859914897,
+  "macro_f1": 0.5665687047147346,
+  "weighted_f1": 0.7328693595583875
+}

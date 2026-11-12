@@ -1,0 +1,14 @@
+Model     : bigru_seed123
+Experiment: overall
+Split     : test
+Timestamp : 2026-11-13 01:43:04
+
+              precision    recall  f1-score   support
+
+    negative       0.78      0.78      0.78        80
+     neutral       0.53      0.66      0.59        82
+    positive       0.94      0.89      0.92       375
+
+    accuracy                           0.84       537
+   macro avg       0.75      0.78      0.76       537
+weighted avg       0.86      0.84      0.85       537

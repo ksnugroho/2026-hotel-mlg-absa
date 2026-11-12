@@ -1,0 +1,14 @@
+Model     : lstm
+Experiment: aspect
+Split     : test
+Timestamp : 2026-11-13 01:43:20
+
+              precision    recall  f1-score   support
+
+    negative       0.80      0.70      0.75       172
+     neutral       0.21      0.39      0.28        77
+    positive       0.94      0.90      0.92      1006
+
+    accuracy                           0.84      1255
+   macro avg       0.65      0.67      0.65      1255
+weighted avg       0.88      0.84      0.86      1255

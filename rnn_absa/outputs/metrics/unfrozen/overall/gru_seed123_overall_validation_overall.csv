@@ -1,0 +1,2 @@
+model,experiment,split,timestamp,n_samples,accuracy,macro_precision,macro_recall,macro_f1,weighted_f1
+gru_seed123,overall,validation,2026-11-13 01:43:42,536,0.7406716417910447,0.5802200594121326,0.5600181859914897,0.5665687047147346,0.7328693595583875

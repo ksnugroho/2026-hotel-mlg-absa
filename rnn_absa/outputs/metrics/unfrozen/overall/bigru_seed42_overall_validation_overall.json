@@ -1,0 +1,12 @@
+{
+  "model": "bigru_seed42",
+  "experiment": "overall",
+  "split": "validation",
+  "timestamp": "2026-11-13 01:43:46",
+  "n_samples": 536,
+  "accuracy": 0.8246268656716418,
+  "macro_precision": 0.7392384830968646,
+  "macro_recall": 0.7708424624442421,
+  "macro_f1": 0.7520212000210265,
+  "weighted_f1": 0.8325753956053032
+}

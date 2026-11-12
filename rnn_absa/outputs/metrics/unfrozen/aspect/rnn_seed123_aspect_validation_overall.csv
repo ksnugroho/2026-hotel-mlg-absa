@@ -1,0 +1,2 @@
+model,experiment,split,timestamp,n_samples,accuracy,macro_precision,macro_recall,macro_f1,weighted_f1
+rnn_seed123,aspect,validation,2026-11-13 01:43:16,1260,0.6428571428571429,0.40143360133584965,0.4145541363919268,0.39133524317090185,0.6747427224722066

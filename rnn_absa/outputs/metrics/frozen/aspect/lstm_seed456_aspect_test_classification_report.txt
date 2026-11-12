@@ -1,0 +1,14 @@
+Model     : lstm_seed456
+Experiment: aspect
+Split     : test
+Timestamp : 2026-11-13 01:42:37
+
+              precision    recall  f1-score   support
+
+    negative       0.73      0.62      0.67       172
+     neutral       0.16      0.51      0.24        77
+    positive       0.96      0.82      0.88      1006
+
+    accuracy                           0.78      1255
+   macro avg       0.62      0.65      0.60      1255
+weighted avg       0.88      0.78      0.82      1255

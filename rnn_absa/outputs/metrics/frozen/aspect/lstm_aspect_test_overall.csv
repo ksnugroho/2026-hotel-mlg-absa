@@ -1,0 +1,2 @@
+model,experiment,split,timestamp,n_samples,accuracy,macro_precision,macro_recall,macro_f1,weighted_f1
+lstm,aspect,test,2026-11-13 01:42:37,1255,0.7928286852589641,0.6083309858836726,0.6486143043080488,0.5976880977123386,0.822646822882358

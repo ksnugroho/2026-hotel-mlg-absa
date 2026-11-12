@@ -1,0 +1,14 @@
+Model     : bigru_seed42
+Experiment: aspect
+Split     : test
+Timestamp : 2026-11-13 01:43:30
+
+              precision    recall  f1-score   support
+
+    negative       0.81      0.72      0.76       172
+     neutral       0.31      0.66      0.42        77
+    positive       0.97      0.90      0.93      1006
+
+    accuracy                           0.86      1255
+   macro avg       0.70      0.76      0.70      1255
+weighted avg       0.90      0.86      0.88      1255

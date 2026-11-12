@@ -1,0 +1,12 @@
+{
+  "model": "lstm_seed123",
+  "experiment": "overall",
+  "split": "test",
+  "timestamp": "2026-11-13 01:42:58",
+  "n_samples": 537,
+  "accuracy": 0.7839851024208566,
+  "macro_precision": 0.6816919387948732,
+  "macro_recall": 0.5605474254742547,
+  "macro_f1": 0.5522823273730166,
+  "weighted_f1": 0.7308252317135472
+}

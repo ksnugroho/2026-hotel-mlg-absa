@@ -1,0 +1,14 @@
+Model     : bilstm
+Experiment: aspect
+Split     : test
+Timestamp : 2026-11-13 01:42:46
+
+              precision    recall  f1-score   support
+
+    negative       0.71      0.69      0.70       172
+     neutral       0.26      0.53      0.35        77
+    positive       0.96      0.89      0.92      1006
+
+    accuracy                           0.84      1255
+   macro avg       0.64      0.70      0.66      1255
+weighted avg       0.88      0.84      0.86      1255

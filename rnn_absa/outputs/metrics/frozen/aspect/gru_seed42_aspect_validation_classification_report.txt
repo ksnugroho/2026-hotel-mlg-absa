@@ -1,0 +1,14 @@
+Model     : gru_seed42
+Experiment: aspect
+Split     : validation
+Timestamp : 2026-11-13 01:42:38
+
+              precision    recall  f1-score   support
+
+    negative       0.74      0.71      0.72       164
+     neutral       0.19      0.35      0.25        89
+    positive       0.95      0.88      0.91      1007
+
+    accuracy                           0.82      1260
+   macro avg       0.62      0.65      0.63      1260
+weighted avg       0.87      0.82      0.84      1260

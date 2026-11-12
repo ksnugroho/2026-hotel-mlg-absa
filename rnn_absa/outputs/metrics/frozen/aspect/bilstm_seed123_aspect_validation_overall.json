@@ -1,0 +1,12 @@
+{
+  "model": "bilstm_seed123",
+  "experiment": "aspect",
+  "split": "validation",
+  "timestamp": "2026-11-13 01:42:45",
+  "n_samples": 1260,
+  "accuracy": 0.830952380952381,
+  "macro_precision": 0.6498891557582754,
+  "macro_recall": 0.752130537049097,
+  "macro_f1": 0.6809373699588424,
+  "weighted_f1": 0.851838759255928
+}

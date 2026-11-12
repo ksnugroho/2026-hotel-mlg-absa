@@ -1,0 +1,12 @@
+{
+  "model": "bilstm_seed42",
+  "experiment": "overall",
+  "split": "test",
+  "timestamp": "2026-11-13 01:43:02",
+  "n_samples": 537,
+  "accuracy": 0.8100558659217877,
+  "macro_precision": 0.7328461513045008,
+  "macro_recall": 0.7545406504065041,
+  "macro_f1": 0.7331936989124367,
+  "weighted_f1": 0.8236675934268717
+}

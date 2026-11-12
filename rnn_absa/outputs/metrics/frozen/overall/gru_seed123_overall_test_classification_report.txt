@@ -1,0 +1,14 @@
+Model     : gru_seed123
+Experiment: overall
+Split     : test
+Timestamp : 2026-11-13 01:43:00
+
+              precision    recall  f1-score   support
+
+    negative       0.15      0.06      0.09        80
+     neutral       0.29      0.46      0.36        82
+    positive       0.80      0.79      0.80       375
+
+    accuracy                           0.63       537
+   macro avg       0.41      0.44      0.41       537
+weighted avg       0.62      0.63      0.62       537

@@ -1,0 +1,12 @@
+{
+  "model": "lstm",
+  "experiment": "overall",
+  "split": "validation",
+  "timestamp": "2026-11-13 01:42:59",
+  "n_samples": 536,
+  "accuracy": 0.7723880597014925,
+  "macro_precision": 0.60844221763762,
+  "macro_recall": 0.6651056890211507,
+  "macro_f1": 0.6008050720698154,
+  "weighted_f1": 0.7599553833143945
+}

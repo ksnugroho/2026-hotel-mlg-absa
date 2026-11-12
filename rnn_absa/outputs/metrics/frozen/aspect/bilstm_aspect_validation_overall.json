@@ -1,0 +1,12 @@
+{
+  "model": "bilstm",
+  "experiment": "aspect",
+  "split": "validation",
+  "timestamp": "2026-11-13 01:42:46",
+  "n_samples": 1260,
+  "accuracy": 0.8507936507936508,
+  "macro_precision": 0.6694708752294228,
+  "macro_recall": 0.7552675484633963,
+  "macro_f1": 0.7002967463485649,
+  "weighted_f1": 0.8649968827283413
+}

@@ -1,0 +1,14 @@
+Model     : birnn_seed42
+Experiment: overall
+Split     : test
+Timestamp : 2026-11-13 01:43:00
+
+              precision    recall  f1-score   support
+
+    negative       0.86      0.68      0.76        80
+     neutral       0.48      0.55      0.51        82
+    positive       0.91      0.92      0.91       375
+
+    accuracy                           0.82       537
+   macro avg       0.75      0.71      0.73       537
+weighted avg       0.83      0.82      0.83       537

@@ -1,0 +1,14 @@
+Model     : rnn_seed42
+Experiment: overall
+Split     : test
+Timestamp : 2026-11-13 01:42:57
+
+              precision    recall  f1-score   support
+
+    negative       0.25      0.25      0.25        80
+     neutral       0.25      0.30      0.27        82
+    positive       0.79      0.75      0.77       375
+
+    accuracy                           0.61       537
+   macro avg       0.43      0.44      0.43       537
+weighted avg       0.63      0.61      0.62       537

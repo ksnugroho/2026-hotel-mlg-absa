@@ -1,0 +1,14 @@
+Model     : birnn
+Experiment: aspect
+Split     : validation
+Timestamp : 2026-11-13 01:43:25
+
+              precision    recall  f1-score   support
+
+    negative       0.72      0.72      0.72       164
+     neutral       0.29      0.52      0.37        89
+    positive       0.95      0.88      0.92      1007
+
+    accuracy                           0.84      1260
+   macro avg       0.65      0.71      0.67      1260
+weighted avg       0.88      0.84      0.85      1260

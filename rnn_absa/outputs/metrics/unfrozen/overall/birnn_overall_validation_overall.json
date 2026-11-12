@@ -1,0 +1,12 @@
+{
+  "model": "birnn",
+  "experiment": "overall",
+  "split": "validation",
+  "timestamp": "2026-11-13 01:43:44",
+  "n_samples": 536,
+  "accuracy": 0.8283582089552238,
+  "macro_precision": 0.7210739390356063,
+  "macro_recall": 0.7510918817926604,
+  "macro_f1": 0.7346985253964124,
+  "weighted_f1": 0.8330280923702503
+}

@@ -1,0 +1,12 @@
+{
+  "model": "rnn_seed42",
+  "experiment": "aspect",
+  "split": "validation",
+  "timestamp": "2026-11-13 01:43:15",
+  "n_samples": 1260,
+  "accuracy": 0.792063492063492,
+  "macro_precision": 0.5175497042652827,
+  "macro_recall": 0.395146870418081,
+  "macro_f1": 0.40026264031605896,
+  "weighted_f1": 0.7426466139221788
+}

@@ -1,0 +1,14 @@
+Model     : rnn
+Experiment: overall
+Split     : test
+Timestamp : 2026-11-13 01:43:40
+
+              precision    recall  f1-score   support
+
+    negative       0.19      0.16      0.17        80
+     neutral       0.18      0.15      0.16        82
+    positive       0.76      0.81      0.78       375
+
+    accuracy                           0.61       537
+   macro avg       0.37      0.37      0.37       537
+weighted avg       0.58      0.61      0.60       537

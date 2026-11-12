@@ -1,0 +1,2 @@
+model,experiment,split,timestamp,n_samples,accuracy,macro_precision,macro_recall,macro_f1,weighted_f1
+bigru_seed123,aspect,validation,2026-11-13 01:42:48,1260,0.8412698412698413,0.6610197058502673,0.7428330089846092,0.6857177455272389,0.8584714438864762

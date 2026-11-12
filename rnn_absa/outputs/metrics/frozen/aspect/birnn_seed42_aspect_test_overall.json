@@ -1,0 +1,12 @@
+{
+  "model": "birnn_seed42",
+  "experiment": "aspect",
+  "split": "test",
+  "timestamp": "2026-11-13 01:42:41",
+  "n_samples": 1255,
+  "accuracy": 0.8215139442231075,
+  "macro_precision": 0.6313620995480494,
+  "macro_recall": 0.6926755184187335,
+  "macro_f1": 0.6386961717493124,
+  "weighted_f1": 0.8467543999833105
+}

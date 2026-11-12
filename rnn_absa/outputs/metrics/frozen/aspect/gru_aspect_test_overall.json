@@ -1,0 +1,12 @@
+{
+  "model": "gru",
+  "experiment": "aspect",
+  "split": "test",
+  "timestamp": "2026-11-13 01:42:40",
+  "n_samples": 1255,
+  "accuracy": 0.8103585657370518,
+  "macro_precision": 0.6376366929330772,
+  "macro_recall": 0.617533948628775,
+  "macro_f1": 0.6040017410842551,
+  "weighted_f1": 0.8313168742431141
+}

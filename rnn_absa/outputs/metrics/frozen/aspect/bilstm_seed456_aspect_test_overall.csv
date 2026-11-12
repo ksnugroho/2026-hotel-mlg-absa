@@ -1,0 +1,2 @@
+model,experiment,split,timestamp,n_samples,accuracy,macro_precision,macro_recall,macro_f1,weighted_f1
+bilstm_seed456,aspect,test,2026-11-13 01:42:46,1255,0.8446215139442231,0.6359545718872345,0.6654833407688371,0.6434107822447738,0.8549377878828253

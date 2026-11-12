@@ -1,0 +1,14 @@
+Model     : bilstm_seed456
+Experiment: aspect
+Split     : test
+Timestamp : 2026-11-13 01:42:46
+
+              precision    recall  f1-score   support
+
+    negative       0.69      0.65      0.67       172
+     neutral       0.27      0.44      0.33        77
+    positive       0.94      0.91      0.93      1006
+
+    accuracy                           0.84      1255
+   macro avg       0.64      0.67      0.64      1255
+weighted avg       0.87      0.84      0.85      1255
